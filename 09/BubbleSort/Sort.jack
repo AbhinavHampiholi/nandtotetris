@@ -1,0 +1,30 @@
+class Sort{
+    function void bubble(Array a, int size){
+        
+        var int j;
+        var int i;
+        let i = 0;
+        //Implementing "slow" bubble sort
+        while(i < size){
+            let j = 0;
+            while(j < (size - 1)){
+                if(a[j] > a[j+1]){
+                    let a[j] = a[j] + a[j+1];
+                    let a[j+1] = a[j] - a[j+1];
+                    let a[j] = a[j] - a[j+1];
+                }
+                let j = j + 1;
+            }
+            let i = i + 1;
+        }
+        
+        let i = 0;
+        while(i < size){
+            do Output.printInt(a[i]);
+            do Output.printString(" ");
+            let i = i + 1;
+        }
+
+        return;
+    }
+}
